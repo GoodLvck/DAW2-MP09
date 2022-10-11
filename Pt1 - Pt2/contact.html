@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/contact.css">
+</head>
+<body>
+    <header class="gridFlexbox">
+		<a href="./index.html" class="logo">
+            <img src="./img/logo.png" alt="Logo" />
+        </a>
+
+        <ul id="navLinks" >
+            <li><a href="./index.html" >Inicio</a></li>
+            <li><a href="./products.html" >Productos</a></li>
+            <li><a href="./about.html" >About</a></li>
+            <li><a href="./contact.html" >Contacto</a></li>
+        </ul>
+
+		<div id="sessionButtons">
+			<a href="./login.html" class="outlineButton" >Log in</a>
+			<a href="./registro.html" class="colorButton" >Registro</a>
+		</div>
+	</header>
+
+    <!-- CONTENIDO -->
+	<section>
+		<div class="tarjetaGrande">
+            <h1>Formulario de contacto</h1>
+			<form class="gridFlexbox" id="contacto">
+				<div>
+					<label for="nombre">Nombre:</label>
+					<input type="text" name="nombre" placeholder="Nombre" required>
+				</div>
+				<div>
+					<label for="email">Email:</label>
+					<input type="email" name="email" placeholder="email@email.email" required>
+				</div>
+				<div>
+					<label for="telf">Teléfono:</label>
+					<input type="text" name="telf" placeholder="+34 111 222 333" required>
+				</div>
+				<div>
+					<label for="subject">Título:</label>
+					<input type="text" name="subject" placeholder="Título" required>
+				</div>
+				<div id="mensaje">
+					<label for="mensaje">Mensaje:</label>
+					<textarea type="text" name="mensaje" required></textarea>
+				</div>
+			    <a type="submit" id="enviar" class="colorButton">Enviar</a>
+			</form>
+		</div>
+	</section>
+    <!-- FIN DEL CONTENIDO -->
+
+    <footer>
+        <hr>
+        <div>
+            <p>© 2022 Titulo</p>
+
+            <a href="./index.html" class="logo">
+                <img src="./img/logo.png" alt="Logo" />
+            </a>
+
+            <ul>
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./products.html">Productos</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./contact.html">Contacto</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

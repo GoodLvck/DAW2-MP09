@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/login.css">
+</head>
+<body>
+    <header class="gridFlexbox">
+		<a href="./index.html" class="logo">
+            <img src="./img/logo.png" alt="Logo" />
+        </a>
+
+        <ul id="navLinks" >
+            <li><a href="./index.html" >Inicio</a></li>
+            <li><a href="./products.html" >Productos</a></li>
+            <li><a href="./about.html" >About</a></li>
+            <li><a href="./contact.html" >Contacto</a></li>
+        </ul>
+
+		<div id="sessionButtons">
+			<a href="./login.html" class="outlineButton" >Log in</a>
+			<a href="./registro.html" class="colorButton" >Registro</a>
+		</div>
+	</header>
+
+    <!-- CONTENIDO -->
+    <section>
+		<div class="tarjetaGrande">
+            <div>
+                <h1>Qué alegría verte de nuevo</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus et dolore expedita quidem voluptas nisi voluptates incidunt cumque eveniet fugiat in, dolorem ea totam officia, numquam suscipit harum alias? Minus.</p>
+            </div>
+			<form class="gridFlexbox" id="login">
+				<div>
+					<label for="usuario">Usuario:</label>
+					<input type="text" name="usuario" placeholder="Usuario" required>
+				</div>
+				<div>
+					<label for="contraseña">Contraseña:</label>
+					<input type="password" name="contraseña" placeholder="Contraseña" required>
+				</div>
+			    <a type="submit" id="loginBtn" class="colorButton">Iniciar Sesión</a>
+			</form>
+		</div>
+	</section>
+
+	<!-- <div>
+        <div>
+            <div>
+                <h1>Qué alegría verte de nuevo</h1>
+                <p>Inicia sesión para añadir nuevos spots a tu lista de favoritos.</p>
+            </div>
+            <div>
+                <form>
+                    <div>
+                        <input type="text"name="usuario" minlength="2" placeholder="Usuario" required>
+                        <label for="usuario">Usuario<span>*</span></label>
+                    </div>
+                    <div>
+                        <input type="password" name="password" placeholder="Contraseña" required>
+                        <label for="password">Contraseña <span>*</span></label>
+                    </div>
+                    <div>
+                        <label>
+                            <input type="checkbox" value="remember-me"> Recordar 
+                        </label>
+                    </div>
+                    <button type="submit">Iniciar sesión</button>
+                    <hr>
+                    <small class="text-muted">¿Todavía no tienes una cuenta? <a href="./registro.html">Regístrate aquí.</a></small>
+                </form>
+            </div>
+        </div>
+    </div> -->
+    <!-- FIN DEL CONTENIDO -->
+
+    <footer>
+        <hr>
+        <div>
+            <p>© 2022 Titulo</p>
+
+            <a href="./index.html" class="logo">
+                <img src="./img/logo.png" alt="Logo" />
+            </a>
+
+            <ul>
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./products.html">Productos</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./contact.html">Contacto</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

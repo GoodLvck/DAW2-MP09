@@ -1,0 +1,49 @@
+/* CONTENIDO ABOUT */
+section{
+    line-height: 40px;
+    padding: auto 100px;
+}
+
+#divisor{
+    width: 75%;
+    margin: auto;
+    border: none;
+    height: 1px;
+    background-color: blueviolet;
+}
+
+#presentacion, #equipo, #opiniones{
+    padding: 75px 110px;
+}
+
+#ubicacion{
+    padding: 75px 0 75px 0;
+}
+
+.opinion {
+    width: 45%;
+    padding: 15px;
+    margin: 25px auto;
+    line-height: 40px;
+}
+
+.opinion #titulo{
+    display: flex;
+}
+
+.opinion h2{
+    display: inline-flex;
+}
+
+.opinion #valoracion{
+    width: 25%;
+    margin: auto 10px auto auto;
+    display: inline-flex;
+}
+
+iframe{
+    box-shadow: 0px 10px 25px 5px rgba(0, 0, 0, 0.1);
+
+}
+
+/* FIN CONTENIDO ABUOT */
