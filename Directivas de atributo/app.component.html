@@ -1,0 +1,16 @@
+<div class="leyenda">
+    <h3 *ngFor="let festivo of tipoFestivo" [ngStyle]="{'color':festivo['color']}" >Festiu {{festivo['tipo']}}</h3>
+</div>
+<br>
+<div class="calendarios">
+    <div class="calendario" *ngFor="let mes of meses">
+        <h3>{{mes['nombre']}}</h3>
+        <div class="diasTxt" >
+            <span *ngFor="let dia of diasTxt">{{dia}}</span>
+        </div>
+        <div class="diasNum">
+            <span *ngFor="let espacio of mes['inicio']"></span>
+            <span *ngFor="let dia of mes['diasCnt']" [ngClass]="colorFondo(mes['festivos'], dia)">{{dia}}</span>
+        </div>
+    </div>
+</div>

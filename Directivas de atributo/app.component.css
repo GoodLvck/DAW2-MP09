@@ -1,0 +1,63 @@
+.leyenda {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.calendarios {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.calendario{
+    border: 1px solid black;
+    border-radius: 5%;
+    padding: 10px 20px;
+    box-shadow: 3px 3px;
+}
+
+.diasNum{
+    padding-top: 15px;
+}
+
+.diasTxt, .diasNum{
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    column-gap: 10px;
+    row-gap: 15px;
+}
+
+.diasTxt span, .diasNum span{
+    padding: 10px;
+    width: 20px;
+    text-align: center;
+    display: inline-block;
+}
+
+.diasTxt span, .festivo{
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+}
+
+.diasTxt span {
+    color: #ffffff;
+    background-color: #292929;
+}
+
+.nacional{
+    background-color: #50d413;
+}
+
+.regional{
+    background-color: #7434eb;
+}
+
+.local{
+    background-color: #eb34e5;
+}
+
+.centre{
+    background-color: #13cad4;
+}
