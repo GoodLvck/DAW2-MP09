@@ -1,0 +1,13 @@
+<!-- <h1>Por favor, haz bien la página</h1> -->
+
+<div class="listas">
+    <div class="lista" *ngFor="let lista of listas">
+
+        <h2>{{lista}}</h2>
+        
+        <ng-container *ngFor="let tarea of tareas">
+            <app-tarea [tarea]="tarea" *ngIf="tarea.lista == lista"></app-tarea>
+        </ng-container>
+    
+    </div>
+</div>

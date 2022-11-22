@@ -1,0 +1,21 @@
+<div class="card">
+    <div class="cardImage" *ngIf="tarea.img">
+        <img src="{{tarea.img}}" alt="fotoUsuario">
+    </div>
+
+    <div [ngStyle]="{padding: (tarea.img) ? '20px' : '25px 20px'}">
+        <p>{{tarea.titulo}}</p>
+    </div>
+    
+    <div class="cardFooter" *ngIf="tarea.fechaFin || tarea.usuarios.length > 0">
+        <p *ngIf="tarea.fechaFin" class="fechaFin" [ngClass]="fondoFecha(tarea)">
+            <img src="/assets/reloj.png" alt="">
+            {{tarea.fechaFin}}
+        </p>
+
+        <div *ngIf="tarea.usuarios.length > 0" class="usuarios">
+            <img src="{{usuario.img}}" alt="{{usuario.alt}}" *ngFor="let usuario of tarea.usuarios">
+        </div>
+    </div>
+
+</div>
