@@ -59,11 +59,12 @@ export class TareaComponent implements OnInit {
         if(tarea.fechaFin != null){
             fechaTmp = new Date(tarea.fechaFin);
 
-            diferenciaFechas = hoy.getTime() - fechaTmp.getTime()
+            diferenciaFechas = fechaTmp.getTime() - hoy.getTime()
 
-            if(diferenciaFechas >= 0 && diferenciaFechas <= 86400000 ){
+
+            if(diferenciaFechas > 0 && diferenciaFechas < 86400000){
                 clase = "fechaCercana"
-            } else if(fechaTmp < hoy){
+            } else if(fechaTmp < hoy) { // Ya ha pasado
                 if(tarea.lista != "Finalizadas"){
                     clase = "fechaVencido"
                 } else {
