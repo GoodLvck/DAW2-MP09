@@ -8,7 +8,7 @@
     </div>
     
     <div class="cardFooter" *ngIf="tarea.fechaFin || tarea.usuarios.length > 0">
-        <p *ngIf="tarea.fechaFin" class="fechaFin" [ngClass]="fondoFecha(tarea)">
+        <p *ngIf="tarea.fechaFin" class="fechaFin" [ngClass]="mostrarFecha(tarea)" >
             <img src="/assets/reloj.png" alt="">
             {{tarea.fechaFin}}
         </p>

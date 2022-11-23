@@ -49,14 +49,32 @@ export class TareaComponent implements OnInit {
         return fondo;
     }
 
-    mostrarFecha(fecha: Date) : string{
+    mostrarFecha(tarea: Tarea) : String{
 
-        let fechaTmp: Date = fecha;
-        let fechaString: string;
+        let fechaTmp: Date;
+        let hoy: Date = new Date();
+        let clase: String = "";
+        let diferenciaFechas: number = 0;
 
-        fechaString = fechaTmp.toLocaleDateString();
+        if(tarea.fechaFin != null){
+            fechaTmp = new Date(tarea.fechaFin);
 
-        return fechaString;
+            diferenciaFechas = hoy.getTime() - fechaTmp.getTime()
+
+            if(diferenciaFechas >= 0 && diferenciaFechas <= 86400000 ){
+                clase = "fechaCercana"
+            } else if(fechaTmp < hoy){
+                if(tarea.lista != "Finalizadas"){
+                    clase = "fechaVencido"
+                } else {
+                    clase = "fechaATiempo"
+                }
+            } else {
+                clase = "fechaLejana"
+            }
+        }
+
+        return clase
 
     }
 
